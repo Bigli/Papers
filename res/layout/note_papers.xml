@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#f9ff91" android:clickable="false">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заголовок"
+            android:id="@+id/note_title"
+            android:textColor="#ad9470" android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_note"
+            android:layout_alignBottom="@+id/note_title" android:src="@drawable/back"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Ваш текст"
+            android:id="@+id/note_text" android:layout_alignLeft="@+id/back_note" android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp" android:background="#f9ff91" android:textColor="#ad9470"
+            android:textSize="20dp" android:textStyle="italic" android:typeface="serif" android:gravity="top"/>
+</RelativeLayout>

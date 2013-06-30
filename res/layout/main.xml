@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#f9ff91">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/Title" android:layout_gravity="center" android:textSize="20dp" android:textStyle="bold"
+                android:clickable="false" android:textColor="#c7ba58" android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" android:layout_marginTop="10dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cats"
+                android:background="@drawable/add_folder"
+                android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/cats_list" android:layout_gravity="center" android:headerDividersEnabled="false"
+            android:layout_marginTop="20dp" android:background="#f9ff91"
+            />
+</LinearLayout>
+

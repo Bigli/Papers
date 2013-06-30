@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#f9ff91">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/Title_papers" android:layout_gravity="center" android:textSize="20dp" android:textStyle="bold"
+                android:clickable="false" android:textColor="#c7ba58"
+                android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_papers"
+                android:background="@drawable/add_papers"
+                android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_toRightOf="@+id/Title_papers" android:layout_alignTop="@+id/Title_papers"
+                android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/papers_list" android:layout_gravity="center" android:headerDividersEnabled="false"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>
+
