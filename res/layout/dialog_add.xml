@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#f9ff91">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/papers_add_label"
+            android:id="@+id/lable_add_dialog" android:layout_gravity="center" android:textColor="#c6c293"
+            android:textSize="20dp" android:textStyle="bold"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/papers_add_title"
+            android:id="@+id/add_dialog_title" android:layout_gravity="center"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <Gallery
+                android:layout_width="fill_parent"
+                android:layout_height="68dp"
+                android:id="@+id/dialog_gallery"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="false"/>
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/canceldialog_button"
+                android:layout_alignParentLeft="false" android:layout_marginLeft="150dp"
+                android:layout_alignParentTop="false" android:layout_marginTop="80dp"/>
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:id="@+id/okdialog_button" android:layout_alignParentRight="false" android:layout_alignTop="@+id/canceldialog_button"
+                android:layout_alignParentTop="false" android:layout_marginLeft="50dp"/>
+    </RelativeLayout>
+</LinearLayout>
